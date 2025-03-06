@@ -109,9 +109,9 @@ def main():
     client = ThingsboardClient()
     
     # Login
-    # if not client.login(username, password):
-    #     logger.error("Failed to login. Exiting.")
-    #     return
+    if not client.login(username, password):
+        logger.error("Failed to login. Exiting.")
+        return
     
     while True:
         try:
