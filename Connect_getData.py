@@ -98,12 +98,12 @@ class ThingsboardClient:
             raise ValueError(f"Invalid time format. Expected DD-MM-YYYY HH:MM:SS, got {time_str}")
 
 def main():
-    username = "vinh.nguyen123@hcmut.edu.vn"
-    password = "Vinhnguyen1"
-    device_id = "ebaeb540-e37c-11ef-ad09-515f790ed9df"
-    attribute = "temperature"
-    start_time = "2-2-2025 0:0:0"
-    end_time = "3-5-2025 0:0:0"
+    username = ""
+    password = ""
+    device_id = ""
+    attribute = ""
+    start_time = ""
+    end_time = ""
     
     # Initialize client
     client = ThingsboardClient()
