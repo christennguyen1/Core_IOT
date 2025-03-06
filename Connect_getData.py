@@ -109,9 +109,9 @@ def main():
     client = ThingsboardClient()
     
     # Login
-    if not client.login(username, password):
-        logger.error("Failed to login. Exiting.")
-        return
+    # if not client.login(username, password):
+    #     logger.error("Failed to login. Exiting.")
+    #     return
     
     while True:
         try:
@@ -122,6 +122,8 @@ def main():
                 # Process the data
                 logger.info("Data retrieved successfully")
                 logger.info(f"Data: {result['data']}")
+
+                #ToDO
             else:
                 # Handle errors
                 if result.get("status_code") == 401:
